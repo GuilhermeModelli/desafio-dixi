@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    padding: 3rem 2rem;
+    color:#000000;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.politica-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 25%;
+}
+
+.titulo-politica {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #49A8DB
+}
+
+.divisor {
+    border: 2px solid #EBEDEE;
+    width: 1646px;
+    height: 0px;
+    top: 167px;
+    left: 60px;
+}
+
+.operacoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 75%;
+}
+
+.operacoes-container div {
+    gap: .4rem;
+}
+
+.carga-horaria-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 8.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.input-hora {
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: .5rem 1.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.input-hora:focus {
+    outline: none;
+}
+
+.marcacoes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.lista-marcacoes {
+    list-style: none;
+    display: flex;
+    gap: .8rem;
+}
+
+.marcacoes-container-lista {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.marcacoes-container-lista, .lista-marcacoes {
+    flex-wrap: wrap;
+}
+
+.item-marcacao .input-hora {
+    width: 5.6rem;
+}
+
+.botao-adicionar-marcacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color:#49A8DB;
+    color: white; 
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    font-size: 18px; 
+    transition: background-color 0.3s ease;
+    margin-top: 35px; 
+}
+
+.botao-adicionar-marcacao:hover {
+    background-color: #3c8cb8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botao-adicionar-marcacao:focus {
+    outline: none;
+}
+
+.texto-botao {
+    margin-bottom: 0.16rem;
+}
+
+.botao-container {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+.botao-calcular {
+    width: 145px;
+    height: 35px;
+    top: 340px;
+    left: 60px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color:#49A8DB;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.botao-calcular:hover {
+    background-color:#3c8cb8;
+}
+
+.container-tabela-resultados {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container-tabela-resultados div span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 16.6%;
+}
+
+.cabecalho-tabela-resultados {
+    display: flex;
+    padding: 10px;
+    font-weight: bold;
+    color: #3da8f5;
+    text-align: center;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.linha-resultados {
+    display: flex;
+    padding: 15px 10px;
+    text-align: center;
+    color:#000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}

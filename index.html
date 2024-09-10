@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/style/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" href="./src/img/logo-dixi.png" type="image/x-icon">
+
+    <title>Desafio Dixi</title>
+</head>
+<body>
+    <main>
+        <header class="cabecalho">
+            <div class="politica-container">
+                <h2 class="titulo-politica">Adicional Noturno</h2>
+                <p class="descricao-politica">Calculado com base em um período fixo de 52 minutos e 30 segundos (52m30s) por cada hora de trabalho realizada durante o período noturno.</p>
+            </div>
+            <div class="politica-container">
+                <h2 class="titulo-politica">Tolerância Geral</h2>
+                <p class="descricao-politica">10 minutos</p>
+            </div>
+            <div class="politica-container">
+                <h2 class="titulo-politica">Considerar Integral</h2>
+                <p class="descricao-politica">O sistema deve sempre considerar integralmente todas as ocorrências.</p>
+            </div>
+            <div class="politica-container">
+                <h2 class="titulo-politica">Intervalos</h2>
+                <p class="descricao-politica">O sistema deve considerar e calcular os intervalos de forma automática, baseando-se nas marcações inseridas.</p>
+            </div>
+        </header>
+
+        <hr class="divisor">
+
+        <div class="operacoes-container">
+            <div class="carga-horaria-container">
+                <label class="label-carga-horaria" for="carga-horaria">Carga Horária</label>
+                <input class="input-hora carga-horaria-input" type="text" id="carga-horaria" name="carga-horaria" placeholder="00:00" maxlength="5">
+            </div>
+
+            <div class="marcacoes-container">
+                <div class="marcacoes-container-lista">
+                    <h3 class="titulo-marcacoes">Marcações</h3>
+                    <ul class="lista-marcacoes">
+                        <li class="item-marcacao">
+                            <input class="input-hora" type="text" maxlength="5" placeholder="00:00">
+                        </li>
+                        <li class="item-marcacao">
+                            <input class="input-hora" type="text" maxlength="5" placeholder="00:00">
+                        </li>
+                        <li class="item-marcacao">
+                            <input class="input-hora" type="text" maxlength="5" placeholder="00:00">
+                        </li>
+                        <li class="item-marcacao">
+                            <input class="input-hora" type="text" maxlength="5" placeholder="00:00">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="botao-marcacao-container">
+                    <button onclick="adicionarMarcacao()" class="botao-adicionar-marcacao">
+                        <span class="texto-botao"><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="botao-container">
+                <button onclick="calcular();" class="botao-calcular">CALCULAR</button>
+            </div>
+        </div>
+
+        <div class="container-tabela-resultados">
+            <div class="cabecalho-tabela-resultados">
+                <span>HORAS TRABALHADAS</span>
+                <span>DÉBITO</span>
+                <span>CRÉDITO</span>
+                <span>TRABALHADAS NORMAIS</span>
+                <span>ADICIONAL NOTURNO</span>
+                <span>INTERVALO</span>
+            </div>
+            <div class="linha-resultados">
+                <span class="resultado-trabalhada">00:00</span>
+                <span class="resultado-debito">00:00</span>
+                <span class="resultado-credito">00:00</span>
+                <span class="resultado-trabalhada-normal">00:00</span>
+                <span class="resultado-adicional-noturno">00:00</span>
+                <span class="resultado-intervalo">00:00</span>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./src/script/script.js"></script>
+</html>
