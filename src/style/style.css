@@ -106,21 +106,19 @@ main {
 }
 
 .botao-adicionar-marcacao {
-    width: 35px;
-    height: 35px;
-    border: none;
-    background-color: var(--azul-padrao);
-    border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    color: var(--branco-padrao);
-    font-size: 2rem;
-    margin-top: 2.2rem;
-    margin-left: .5rem;
-    transition: all .2s;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color:#49A8DB;
+    color: white; 
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    font-size: 18px; 
+    transition: background-color 0.3s ease;
+    margin-top: 35px; 
 }
 
 .botao-adicionar-marcacao:hover {
