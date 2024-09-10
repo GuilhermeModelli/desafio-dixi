@@ -1,3 +1,15 @@
+
+/* Variáveis de cor */
+:root {
+    --azul-padrao: #49A8DB;
+    --azul-padrao-hover: #3c8cb8;
+    --cinza-padrao: #9e9e9e62;
+    --branco-padrao: #fff;
+    --texto: #131313;
+    --borda-tabela : #5a5a5a;
+    --vermelho-erro: #ee2e2e;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +19,7 @@
 
 main {
     padding: 3rem 2rem;
-    color:#000000;
+    color: var(--texto);
 }
 
 .cabecalho {
@@ -27,15 +39,14 @@ main {
 .titulo-politica {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #49A8DB
+    color: var(--azul-padrao);
 }
 
 .divisor {
-    border: 2px solid #EBEDEE;
-    width: 1646px;
-    height: 0px;
-    top: 167px;
-    left: 60px;
+    color: var();
+    border: 1px solid var(--cinza-padrao);
+    opacity: .5;
+    margin: 1rem 0;
 }
 
 .operacoes-container {
@@ -58,8 +69,7 @@ main {
 }
 
 .input-hora {
-    text-align: center;
-    border: 1px solid #000000;
+    border: 1px solid var(--texto);
     border-radius: 5px;
     padding: .5rem 1.2rem;
     font-weight: bold;
@@ -96,23 +106,25 @@ main {
 }
 
 .botao-adicionar-marcacao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    background-color:#49A8DB;
-    color: white; 
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: var(--azul-padrao);
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-    cursor: pointer; 
-    font-size: 18px; 
-    transition: background-color 0.3s ease;
-    margin-top: 35px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: var(--branco-padrao);
+    font-size: 2rem;
+    margin-top: 2.2rem;
+    margin-left: .5rem;
+    transition: all .2s;
 }
 
 .botao-adicionar-marcacao:hover {
-    background-color: #3c8cb8;
+    background-color: var(--azul-padrao-hover);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -131,21 +143,21 @@ main {
 }
 
 .botao-calcular {
-    width: 145px;
-    height: 35px;
-    top: 340px;
-    left: 60px;
+    width: 12.3rem;
+    padding: .5rem;
     font-size: 1.2rem;
     font-weight: 500;
-    background-color:#49A8DB;
+    background-color: var(--azul-padrao);
     border: none;
     border-radius: 5px;
-    color: #ffffff;
+    color: var(--branco-padrao);
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 .botao-calcular:hover {
-    background-color:#3c8cb8;
+    transform: scale(1.05);
+    background-color: var(--azul-padrao-hover);
 }
 
 .container-tabela-resultados {
@@ -173,7 +185,12 @@ main {
     display: flex;
     padding: 15px 10px;
     text-align: center;
-    color:#000000;
-    border: 1px solid #000000;
+    color: var(--texto);
+    border: 1px solid var(--borda-tabela);
     border-radius: 5px;
+}
+
+/* Tratamento de Erros (estilo) */
+.erro-hora {
+    border: 2px solid var(--vermelho-erro);
 }
