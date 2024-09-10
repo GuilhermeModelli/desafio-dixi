@@ -187,8 +187,3 @@ main {
     border: 1px solid var(--borda-tabela);
     border-radius: 5px;
 }
-
-/* Tratamento de Erros (estilo) */
-.erro-hora {
-    border: 2px solid var(--vermelho-erro);
-}
